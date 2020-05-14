@@ -1,0 +1,102 @@
+.gallery-area{
+    .single-gallery{
+        overflow: hidden;
+        &:hover{
+            &::before{
+                opacity: 1;
+                visibility:visible;
+                }
+        }
+        // img
+        .gallery-img{
+            position: relative;
+            height: 565px;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        // Caption
+        .thumb-content-box {
+            position: relative;
+            .thumb-content {
+                position: absolute;
+                bottom: 0;
+                align-items: end;
+                background: #e72526;
+                display: flex;
+                padding: 32px 97px 32px 40px;
+                // Hover
+                opacity: 0;
+                visibility: hidden;
+                @include transition(.4s);
+                transform: translateX(-70%);
+                &::before{
+                    content: "";
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+
+                    background-image: url(../img/gallery/shape1.png);
+                    width: 108px;
+                    height: 61px;
+                    background-repeat: no-repeat;
+                }
+                h3 {
+                    color: #ffffff;
+                    font-weight: 600;
+                    font-size: 24px;
+                    margin: 0;
+                    @media #{$laptop}{
+                        font-size: 32px;
+                    }
+                    @media #{$lg}{
+                        font-size: 32px;
+                    }
+                    @media #{$sm}{
+                        font-size: 27px;
+                    }
+                    @media #{$xs}{
+                        font-size: 23px;
+                    }
+                }
+                a {
+                    color: #fff;
+                    width: 30px;
+                    height: 30px;
+                    line-height: 30px;
+                    border-radius: 50%;
+                    display: block;
+                    text-align: center;
+                    border: 2px solid #fff;
+                    position: relative;
+                    right: -34px;
+                    &:hover {
+                        background: #fff;
+                        color: #ff0000;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.single-gallery:hover .thumb-content-box .thumb-content {
+    opacity: 1;
+    visibility:visible;
+    transform: translateX(0);
+}
+
+.single-gallery:hover{
+
+    .memories-img{
+        .menorie-icon {
+            i{
+                opacity: 1;
+                visibility: visible;
+                transform: scale(1);
+            }
+           
+        }
+    }
+}
+
+

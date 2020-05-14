@@ -1,0 +1,35 @@
+.count-down-area{
+    position: relative;
+    top: -73px;
+    .count-down-wrapper{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        .single-counter{
+            padding: 44px 10px 44px 9px;
+            margin-bottom: 30px;
+            span{
+                color: #fff;
+                font-size: 36px;
+                line-height: 1;
+                margin-bottom: 12px;
+                display: block;
+                font-weight: 600;
+                text-transform: uppercase;
+                font-family:$font_3;
+            }
+            p{
+                font-size: 18px;
+                color: #fff;
+                line-height: 1;
+                margin: 0;
+                padding: 0;
+                font-weight: 600;
+                text-transform: uppercase;
+                font-family:$font_3;
+            }
+        }
+    }
+}
+
+

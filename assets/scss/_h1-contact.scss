@@ -1,0 +1,180 @@
+
+/* 21. Contact */
+.contact-form{
+    .form-wrapper{
+        #contact-form {
+            position: relative;
+            z-index: 1;
+        }
+        background:#fff ;
+        padding:125px 70px 115px 70px;
+        box-shadow: 0px 0px 86px 0px rgba(0, 0, 0, 0.06);
+
+        @media #{$lg}{
+            padding: 100px 82px 115px 82px;
+        }
+        @media #{$md}{
+            padding: 100px 82px 115px 82px;
+        }
+        @media #{$sm}{
+            padding: 100px 34px 115px 36px;
+        }
+        @media #{$xs}{
+            padding: 100px 34px 115px 36px
+        }
+    //    inner shape flower
+        position: relative;
+        .shape-inner-flower{
+            .shpe2{
+                position: absolute;
+                top: 17px;
+                left: 16px;
+                width: 94%;
+                height: 839px;
+                @media #{$lg}{
+                    height: 800px;
+                }
+                @media #{$md}{
+                    height: 800px;
+                }
+                @media #{$sm}{
+                    height: 780px;
+                    width: 95%;
+                }
+                @media #{$xs}{
+                    width: 90%;
+                    height: 778px;
+                }
+            }
+        }
+        // 
+        .shape-outer-flower{
+            .outer-top{
+                position: absolute;
+                top: -62px;
+                left: -143px;
+                z-index: -1;
+                @include transition(.6s);
+            }
+            .outer-bottom{
+                position: absolute;
+                bottom: 2px;
+                right: -133px;
+                z-index: -1;
+                @include transition(.6s);
+            }
+        }
+        input {
+            background: none;
+            height: 60px;
+            width: 100%;
+            padding: 10px 25px;
+            padding-right: 25px;
+            padding-right: 30px;
+            border: 0;
+            color:#a3a3a3;
+            font-weight: 500;
+            text-transform: capitalize;
+            border-radius: 5px;
+            border: 1px solid #d9d9d9;
+        }
+        .nice-select {
+            background: none;
+            height: 60px;
+            width: 100%;
+            border: 0;
+            color: #a3a3a3;
+            font-weight: 500;
+            text-transform: capitalize;
+            padding-top: 10px;
+            border-radius: 5px;
+            border: 1px solid #d9d9d9;
+            .option {
+                color: #a3a3a3;
+            }
+            &::after {
+                border-bottom: 2px solid #a3a3a3;
+                border-right: 2px solid #a3a3a3;
+                height: 7px;
+                right: 41px;
+                width: 7px;
+            }
+            &.open .list {
+                width: 100%;
+                border-radius: 0;
+            }
+            .list {
+                width: 100%;
+            }
+
+        }
+        textarea {
+            color: #a3a3a3;
+            background: none;
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-transform: capitalize;
+            height: 140px;
+            width: 100%;
+            padding: 30px 50px;
+            border: 0;
+            border-radius: 5px;
+            border: 1px solid #d9d9d9;
+            @media #{$md}{
+                padding: 30px 42px;
+            }
+            @media #{$sm}{
+                padding: 30px 42px;
+            }
+            @media #{$xs}{
+                padding: 30px 42px;
+            }
+        }
+    }
+}
+
+    .contact-form input::-moz-placeholder,
+    .contact-form input::-moz-placeholder {
+        color: #a3a3a3;
+        -webkit-transition: .4s;
+        -o-transition: .4s;
+        transition: .4s;
+    }
+    .contact-form input::-moz-placeholder,
+    .contact-form input::placeholder {
+        color: #a3a3a3;
+        -webkit-transition: .4s;
+        -o-transition: .4s;
+        transition: .4s;
+    }
+    .contact-form input:focus::-webkit-input-placeholder {
+        opacity: 0;
+        -webkit-transition: .4s;
+        -o-transition: .4s;
+        transition: .4s;
+    }
+
+    // Hover
+        .form-wrapper:hover{
+            .shape-outer-flower{
+                .outer-top{
+                    top: -70px;
+                }
+                .outer-bottom{
+                    bottom: 18px;
+                }
+            }
+        }
+
+.submit-info {
+    @media #{$sm}{
+        text-align: center;
+    } 
+    @media #{$xs}{
+        text-align: center;
+    }
+}
+
+
+
+  
